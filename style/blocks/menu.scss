@@ -1,0 +1,15 @@
+.menu {
+  flex-grow: 2;
+  margin: 0 47px;
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__item {
+    font-size: 18px;
+  }
+  &__link {
+    text-decoration: none;
+  }
+}

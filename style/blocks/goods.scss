@@ -1,0 +1,40 @@
+.goods {
+  height: 658px;
+  &__items {
+    display: flex;
+    height: 100%;
+  }
+  &__item {
+    min-width: 100px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    &--active {
+      flex-grow: 2;
+      .goods__heading {
+        transform: rotate(0deg);
+
+        left: 84px;
+        top: 109px;
+      }
+      .goods__img {
+        filter: brightness(100%)
+      }
+    }
+  }
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(40%);
+  }
+  &__heading {
+    position: absolute;
+    bottom: 110px;
+    left: -60px;
+    font-size: 48px;
+    color: $white;
+    transform: rotate(-90deg);
+  }
+}

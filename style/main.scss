@@ -1,0 +1,32 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
+
+// Base
+@import 'layout/normalize.css';
+@import 'layout/variables';
+@import 'layout/mixins';
+@import 'layout/core';
+@import 'layout/btn';
+@import 'layout/form.scss';
+
+// Blocks in ABC sort
+@import 'blocks/page-nav';
+@import 'blocks/advantages';
+@import 'blocks/benefits';
+@import 'blocks/contacts';
+@import 'blocks/footer';
+@import 'blocks/goods';
+@import 'blocks/header';
+@import 'blocks/map';
+@import 'blocks/menu';
+@import 'blocks/order';
+@import 'blocks/params';
+@import 'blocks/review-card';
+@import 'blocks/review-selector';
+@import 'blocks/reviews';
+@import 'blocks/slider';
+@import 'blocks/slide';
+@import 'blocks/social';
+@import 'blocks/table';
+@import 'blocks/team';
+@import 'blocks/we-work';

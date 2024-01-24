@@ -1,0 +1,19 @@
+.contacts {
+  font-style: normal;
+  text-decoration: none;
+}
+.contacts__address {
+}
+.contacts__phone {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 15px;
+    background: center/contain no-repeat url('/images/icons/Call.svg');
+  }
+}
+.contacts__link {
+  font-size: 22px;
+  text-decoration: none;
+}
