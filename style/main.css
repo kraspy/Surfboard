@@ -158,7 +158,7 @@ a {
   position: absolute;
   right: -55px;
   top: 55px;
-  background: url("/images/icons/advantages-divider.svg");
+  background: url("images/icons/advantages-divider.svg");
 }
 .advantages__image {
   display: flex;
@@ -222,7 +222,7 @@ a {
   display: inline-block;
   width: 18px;
   height: 15px;
-  background: center/contain no-repeat url("/images/icons/Call.svg");
+  background: center/contain no-repeat url("images/icons/Call.svg");
 }
 
 .contacts__link {
@@ -279,7 +279,7 @@ a {
 
 .header {
   padding: 21px 0 49px 0;
-  background: url("../../images/content/header-1.jpg") left 90%/111% no-repeat;
+  background: url("../..images/content/header-1.jpg") left 90%/111% no-repeat;
   color: #ffffff;
 }
 .header__top {
@@ -325,7 +325,7 @@ a {
 .order {
   position: relative;
   padding: 62px 80px 85px 80px;
-  background: url(/images/content/order-form-bg.jpg) center center/cover no-repeat;
+  background: url(images/content/order-form-bg.jpg) center center/cover no-repeat;
 }
 .order:before {
   content: "";
