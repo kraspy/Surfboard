@@ -67,7 +67,7 @@ a {
 }
 .form__row {
   display: flex;
-  gap: 20px;
+  gap: 22px;
 }
 .form__row--buttons {
   margin-top: 44px;
@@ -86,9 +86,15 @@ a {
 .form__field--checkbox {
   margin-top: 16px;
 }
+.form__field--checkbox label {
+  margin-bottom: 0;
+}
 .form__field--radio {
   width: auto;
   margin-top: 36px;
+}
+.form__field--radio label {
+  margin-bottom: 0;
 }
 .form__label {
   display: flex;
@@ -98,6 +104,7 @@ a {
   font-weight: 400;
   color: #ffffff;
   cursor: pointer;
+  margin-bottom: 2px;
 }
 .form__control {
   box-sizing: border-box;
