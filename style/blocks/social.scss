@@ -8,13 +8,48 @@
   &__link {
   }
   &__link--vk {
-  }
-  &__image {
+    .socials__image {
+      background-image: url('../images/social/vk.svg');
+    }
+    &:hover {
+      .socials__image {
+        background-image: url('../images/social/vk-hover.svg');
+      }
+    }
   }
   &__link--fb {
+    .socials__image {
+      background-image: url('../images/social/f.svg');
+    }
+    &:hover {
+      .socials__image {
+        background-image: url('../images/social/f-hover.svg');
+      }
+    }
   }
   &__link--ig {
+    .socials__image {
+      background-image: url('../images/social/in.svg');
+    }
+    &:hover {
+      .socials__image {
+        background-image: url('../images/social/in-hover.svg');
+      }
+    }
   }
   &__link--tw {
+    .socials__image {
+      background-image: url('../images/social/tv.svg');
+    }
+    &:hover {
+      .socials__image {
+        background-image: url('../images/social/tv-hover.svg');
+      }
+    }
+
+  }
+  &__image {
+    width: 20px;
+    height: 20px;
   }
 }

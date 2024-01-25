@@ -12,9 +12,17 @@
   background-color: $yellow;
   border-radius: 40px;
   font-weight: 800;
+  transition: background-color .3s;
+  &:hover {
+    background-color: $yellow-hover;
+  }
 }
 
 .btn-reset {
   font-size: 18px;
-  color: $white
+  color: $white;
+  transition: color .3s;
+  &:hover {
+    color: $yellow
+  }
 }

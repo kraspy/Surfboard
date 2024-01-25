@@ -55,11 +55,19 @@ a {
   background-color: #fedb3f;
   border-radius: 40px;
   font-weight: 800;
+  transition: background-color 0.3s;
+}
+.btn-primary:hover {
+  background-color: #FFD517;
 }
 
 .btn-reset {
   font-size: 18px;
   color: #ffffff;
+  transition: color 0.3s;
+}
+.btn-reset:hover {
+  color: #fedb3f;
 }
 
 .form {
@@ -466,6 +474,35 @@ a {
   display: flex;
   gap: 14px;
 }
+.socials__link--vk .socials__image {
+  background-image: url("../images/social/vk.svg");
+}
+.socials__link--vk:hover .socials__image {
+  background-image: url("../images/social/vk-hover.svg");
+}
+.socials__link--fb .socials__image {
+  background-image: url("../images/social/f.svg");
+}
+.socials__link--fb:hover .socials__image {
+  background-image: url("../images/social/f-hover.svg");
+}
+.socials__link--ig .socials__image {
+  background-image: url("../images/social/in.svg");
+}
+.socials__link--ig:hover .socials__image {
+  background-image: url("../images/social/in-hover.svg");
+}
+.socials__link--tw .socials__image {
+  background-image: url("../images/social/tv.svg");
+}
+.socials__link--tw:hover .socials__image {
+  background-image: url("../images/social/tv-hover.svg");
+}
+.socials__image {
+  width: 20px;
+  height: 20px;
+}
+
 .team {
   margin: 68px 80px 60px;
   text-align: center;
