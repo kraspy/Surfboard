@@ -87,13 +87,17 @@ a {
   margin-top: 16px;
 }
 .form__field--radio {
+  width: auto;
   margin-top: 36px;
 }
 .form__label {
-  display: block;
+  display: flex;
+  gap: 10px;
+  align-items: center;
   font-size: 18px;
   font-weight: 400;
   color: #ffffff;
+  cursor: pointer;
 }
 .form__control {
   box-sizing: border-box;
@@ -105,6 +109,28 @@ a {
 }
 .form__control:focus {
   border: 3px solid #fedb3f;
+}
+.form__chk {
+  display: none;
+}
+.form__chk:checked + .form__checkbox {
+  background: url("../images/icons/checkmark.svg") center center no-repeat #ffffff;
+}
+.form__chk:checked + .form__radiobox {
+  background-image: radial-gradient(#fedb3f 0, #fedb3f 6px, #ffffff 6px, #ffffff 100%);
+}
+.form__checkbox {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+}
+.form__radiobox {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  border-radius: 50%;
 }
 
 .page-nav {
@@ -279,7 +305,7 @@ a {
 
 .header {
   padding: 21px 0 49px 0;
-  background: url("../..images/content/header-1.jpg") left 90%/111% no-repeat;
+  background: url("../images/content/header-1.jpg") left 90%/111% no-repeat;
   color: #ffffff;
 }
 .header__top {
@@ -325,7 +351,7 @@ a {
 .order {
   position: relative;
   padding: 62px 80px 85px 80px;
-  background: url(images/content/order-form-bg.jpg) center center/cover no-repeat;
+  background: url("../images/content/order-form-bg.jpg") center center/cover no-repeat;
 }
 .order:before {
   content: "";

@@ -21,14 +21,18 @@
       margin-top: 16px;
     }
     &--radio {
+      width: auto;
       margin-top: 36px;
     }
   }
   &__label {
-    display: block;
+    display: flex;
+    gap: 10px;
+    align-items: center;
     font-size: 18px;
     font-weight: 400;
     color: $white;
+    cursor: pointer;
   }
   &__control {
     box-sizing: border-box;
@@ -40,5 +44,27 @@
     &:focus {
       border: 3px solid $yellow;
     }
+  }
+  &__chk {
+    display: none;
+    &:checked + .form__checkbox {
+      background: url('../images/icons/checkmark.svg') center center no-repeat $white;
+    }
+    &:checked + .form__radiobox {
+      background-image: radial-gradient($yellow 0, $yellow 6px, $white 6px, $white 100%);
+    }
+  }
+  &__checkbox {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: $white;
+  }
+  &__radiobox {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: $white;
+    border-radius: 50%;
   }
 }

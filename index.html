@@ -498,30 +498,36 @@
                   <div class="form__column">
                     <div class="form__row">
                       <div class="form__field form__field--radio">
+                        <label class="form__label" for="pay_cash">
                         <input
+                          class="form__chk"
                           type="radio"
                           name="pay_method"
                           value="pay_cash"
                           id="pay_cash"
                         />
-                        <label class="form__label" for="pay_cash">Оплата наличными</label>
+                        <div class="form__radiobox"></div>
+                        Оплата наличными</label>
                       </div>
                       <div class="form__field form__field--radio">
+                        <label class="form__label" for="pay_card">
                         <input
+                          class="form__chk"
                           type="radio"
                           name="pay_method"
                           value="pay_card"
                           id="pay_card"
                         />
-                        <label class="form__label" for="pay_card">Оплата картой</label>
+                        <div class="form__radiobox"></div>
+                        Оплата картой</label>
                       </div>
                     </div>
                     <div class="form__row">
                       <div class="form__field form__field--checkbox">
-                        <input type="checkbox" name="not-call" id="not-call" />
-                        <label class="form__label" for="not-call"
-                          >Не перезванивать</label
-                        >
+                        <label class="form__label" for="not-call">
+                        <input class="form__chk" type="checkbox" name="not-call" id="not-call" />
+                        <div class="form__checkbox"></div>
+                        Не перезванивать</label>
                       </div>
                     </div>
                   </div>
