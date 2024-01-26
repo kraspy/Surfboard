@@ -5,31 +5,31 @@
   &__list {
     display: flex;
     justify-content: space-between;
-    gap: 56px;
-  }
-  &__subheading {
-    width: 436px;
-    margin: 0 auto;
-    margin-top: 17px;
-    font-size: 18px;
-    color: $gray;
-    line-height: 1.25;
   }
   &__item {
     display: flex;
+    flex-grow: 1;
     position: relative;
     flex-direction: column;
     align-items: center;
     margin-top: 49px;
+    padding: 0 25px;
     &:not(:last-child)::after {
       content: "";
       display: block;
       width: 67px;
       height: 21px;
       position: absolute;
-      right: -55px;
-      top: 55px;
-      background: url('images/icons/advantages-divider.svg');
+      transform: translate(50%, -10px);
+      right: 0;
+      top: 64px;
+      background: url('../images/icons/advantages-divider.svg');
+    }
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
     }
   }
   &__image {
@@ -55,5 +55,6 @@
     margin-top: 20px;
     color: $gray;
     font-size: 20px;
+    font-weight: 300;
   }
 }

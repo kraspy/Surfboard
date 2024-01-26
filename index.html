@@ -9,20 +9,7 @@
   <body>
     <div class="wrapper">
       <div class="container">
-        <div class="page-nav">
-          <ul class="page-nav__dots">
-            <li class="page-nav__dot page-nav__dot--active"></li>
-            <li class="page-nav__dot"></li>
-            <li class="page-nav__dot"></li>
-            <li class="page-nav__dot"></li>
-            <li class="page-nav__dot"></li>
-            <li class="page-nav__dot"></li>
-            <li class="page-nav__dot"></li>
-            <li class="page-nav__dot"></li>
-            <li class="page-nav__dot"></li>
-          </ul>
-        </div>
-        <header class="header">
+        <header class="section header">
           <div class="inner-container">
             <section class="header__top">
               <div class="logo">
@@ -110,11 +97,13 @@
             </div>
           </div>
         </header>
-        <section class="advantages">
-          <h2 class="section-heading">почему Surfboard?</h2>
-          <div class="advantages__subheading">
-            Мы создаем уникальные и качественные доски из прочных и экологичных
-            материалов.
+        <section class="section advantages">
+          <h2 class="section__heading">почему Surfboard?</h2>
+          <div class="section__subheading">
+            <p>
+              Мы создаем уникальные и качественные доски из прочных и
+              экологичных материалов.
+            </p>
           </div>
           <ul class="advantages__list">
             <li class="advantages__item">
@@ -167,7 +156,7 @@
             </li>
           </ul>
         </section>
-        <section class="slider">
+        <section class="section slider">
           <div class="slider__wrapper">
             <ul class="slider__slides">
               <li class="slide">
@@ -220,8 +209,8 @@
             </ul>
           </div>
         </section>
-        <section class="team">
-          <h2 class="section-heading">Команда</h2>
+        <section class="section team">
+          <h2 class="section__heading">Команда</h2>
           <ul class="team__list">
             <li class="team__item">
               <div class="team__image">
@@ -298,7 +287,7 @@
             </li>
           </ul>
         </section>
-        <section class="goods">
+        <section class="section goods">
           <ul class="goods__items">
             <li class="goods__item goods__item--active">
               <img
@@ -334,9 +323,9 @@
             </li>
           </ul>
         </section>
-        <section class="reviews">
-          <div class="section-heading">Отзывы</div>
-          <div class="review-card">
+        <section class="section reviews">
+          <div class="section__heading">Отзывы</div>
+          <article class="review-card">
             <div class="review-card__left">
               <div class="review-card__image">
                 <img
@@ -357,38 +346,44 @@
               </p>
               <p class="review-card__author">Ольга Макарова</p>
             </div>
-          </div>
+          </article>
           <div class="review-selector">
             <div class="review-selector__list">
               <div class="review-selector__item review-selector__item--active">
-                <img
-                  src="images/content/review-user-1.png"
-                  class="review-selector__image"
-                  alt="Отзыв"
-                />
+                <a href="#" class="review-selector__link">
+                  <img
+                    src="images/content/review-user-1.png"
+                    class="review-selector__image"
+                    alt="Отзыв"
+                  />
+                </a>
                 <div class="review-selector__hightlighter"></div>
               </div>
               <div class="review-selector__item">
-                <img
-                  src="images/content/review-user-2.png"
-                  class="review-selector__image"
-                  alt="Отзыв"
-                />
+                <a href="#" class="review-selector__link">
+                  <img
+                    src="images/content/review-user-2.png"
+                    class="review-selector__image"
+                    alt="Отзыв"
+                  />
+                </a>
                 <div class="review-selector__hightlighter"></div>
               </div>
               <div class="review-selector__item">
-                <img
-                  src="images/content/review-user-3.png"
-                  class="review-selector__image"
-                  alt="Отзыв"
-                />
+                <a href="#" class="review-selector__link">
+                  <img
+                    src="images/content/review-user-3.png"
+                    class="review-selector__image"
+                    alt="Отзыв"
+                  />
+                </a>
                 <div class="review-selector__hightlighter"></div>
               </div>
             </div>
           </div>
         </section>
-        <section class="we-work">
-          <div class="section-heading">Как мы работаем</div>
+        <section class="section we-work">
+          <div class="section__heading">Как мы работаем</div>
           <!-- youtube video frame -->
           <iframe
             class="we-work__video"
@@ -401,8 +396,8 @@
             allowfullscreen
           ></iframe>
         </section>
-        <section class="order">
-          <div class="section-heading section-heading--white">
+        <section class="section order">
+          <div class="section__heading section__heading--white">
             Закажите доску
           </div>
           <div class="order__form">
@@ -423,7 +418,7 @@
                       <label class="form__label" for="phone">Телефон</label>
                       <input
                         class="form__control"
-                        type="text"
+                        type="tel"
                         name="phone"
                         id="phone"
                       />
@@ -465,7 +460,7 @@
                       >
                       <input
                         class="form__control"
-                        type="text"
+                        type="number"
                         name="apartment"
                         id="apartment"
                       />
@@ -474,7 +469,7 @@
                       <label class="form__label" for="floor">Этаж</label>
                       <input
                         class="form__control"
-                        type="text"
+                        type="number"
                         name="floor"
                         id="floor"
                       />
@@ -499,35 +494,43 @@
                     <div class="form__row">
                       <div class="form__field form__field--radio">
                         <label class="form__label" for="pay_cash">
-                        <input
-                          class="form__chk"
-                          type="radio"
-                          name="pay_method"
-                          value="pay_cash"
-                          id="pay_cash"
-                        />
-                        <div class="form__radiobox"></div>
-                        Оплата наличными</label>
+                          <input
+                            class="form__chk"
+                            type="radio"
+                            name="pay_method"
+                            value="pay_cash"
+                            id="pay_cash"
+                          />
+                          <div class="form__radiobox"></div>
+                          Оплата наличными</label
+                        >
                       </div>
                       <div class="form__field form__field--radio">
                         <label class="form__label" for="pay_card">
-                        <input
-                          class="form__chk"
-                          type="radio"
-                          name="pay_method"
-                          value="pay_card"
-                          id="pay_card"
-                        />
-                        <div class="form__radiobox"></div>
-                        Оплата картой</label>
+                          <input
+                            class="form__chk"
+                            type="radio"
+                            name="pay_method"
+                            value="pay_card"
+                            id="pay_card"
+                          />
+                          <div class="form__radiobox"></div>
+                          Оплата картой</label
+                        >
                       </div>
                     </div>
                     <div class="form__row">
                       <div class="form__field form__field--checkbox">
                         <label class="form__label" for="not-call">
-                        <input class="form__chk" type="checkbox" name="not-call" id="not-call" />
-                        <div class="form__checkbox"></div>
-                        Не перезванивать</label>
+                          <input
+                            class="form__chk"
+                            type="checkbox"
+                            name="not-call"
+                            id="not-call"
+                          />
+                          <div class="form__checkbox"></div>
+                          Не перезванивать</label
+                        >
                       </div>
                     </div>
                   </div>
@@ -542,13 +545,19 @@
             </form>
           </div>
         </section>
-        <section class="map">
+        <section class="section map">
           <!-- map from yandex maps -->
-          <iframe class="map__frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4f82def4000f5fca7d637647d1c960e7c3cb899c0a922cde84b5128c00c37ca6&amp;source=constructor" width="100%" height="652" frameborder="0"></iframe>
+          <iframe
+            class="map__frame"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A4f82def4000f5fca7d637647d1c960e7c3cb899c0a922cde84b5128c00c37ca6&amp;source=constructor"
+            width="100%"
+            height="100%"
+            frameborder="0"
+          ></iframe>
         </section>
         <footer class="footer">
           <div class="footer__left">
-            <address class="contacts">
+            <address class="contacts--black">
               <div class="contacts__address">
                 Москва, ул.Новый Арбат, д.31/12
               </div>
@@ -588,5 +597,35 @@
         </footer>
       </div>
     </div>
+    <nav class="page-nav">
+      <ul class="page-nav__dots">
+        <li class="page-nav__dot page-nav__dot--active">
+          <a href="" class="page-nav__link"></a>
+        <li class="page-nav__dot">
+          <a href="" class="page-nav__link"></a>
+        </li>
+        <li class="page-nav__dot">
+          <a href="" class="page-nav__link"></a>
+        </li>
+        <li class="page-nav__dot">
+          <a href="" class="page-nav__link"></a>
+        </li>
+        <li class="page-nav__dot">
+          <a href="" class="page-nav__link"></a>
+        </li>
+        <li class="page-nav__dot">
+          <a href="" class="page-nav__link"></a>
+        </li>
+        <li class="page-nav__dot">
+          <a href="" class="page-nav__link"></a>
+        </li>
+        <li class="page-nav__dot">
+          <a href="" class="page-nav__link"></a>
+        </li>
+        <li class="page-nav__dot">
+          <a href="" class="page-nav__link"></a>
+        </li>
+      </ul>
+    </nav>
   </body>
 </html>

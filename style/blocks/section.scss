@@ -1,0 +1,26 @@
+.section {
+  height: 100vh;
+  box-sizing: border-box;
+  &__heading {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    &--white {
+      color: $white;
+    }
+    + .section__subheading {
+      width: 436px;
+      margin: 0 auto;
+      margin-top: 17px;
+      color: $gray;
+      line-height: 1.25;
+    }
+  }
+}
+
+
+.order .section__heading {
+  position: relative;
+  z-index: 2;
+}

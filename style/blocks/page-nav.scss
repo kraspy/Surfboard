@@ -3,19 +3,29 @@
   top: 50%;
   right: 50px;
   transform: translateY(-50%);
+  z-index: $z_page-nav;
   &__dots {
-    
   }
   &__dot {
     display: block;
     width: 18px;
     height: 18px;
     margin: 3px 0;
-    background-image: radial-gradient($white 0, $white 3px, transparent 3px, transparent 100%);
+    background-image: radial-gradient(
+      $white 0,
+      $white 3px,
+      transparent 3px,
+      transparent 100%
+    );
+    border: 1px solid transparent;
+    border-radius: 50%;
+    transition: border 0.3s;
     cursor: pointer;
-    &--active {
-      background-image: radial-gradient($white 0, $white 3px, transparent 3px, transparent 100%),
-      radial-gradient(transparent 0, transparent 8px, $white 8px, $white 9px, transparent 9px)
+    &--active,
+    &:hover {
+      border: 1px solid $white;
     }
+  }
+  &__link {
   }
 }
