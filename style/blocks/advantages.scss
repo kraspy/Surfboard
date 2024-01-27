@@ -5,6 +5,7 @@
   &__list {
     display: flex;
     justify-content: space-between;
+    margin-top: 49px;
   }
   &__item {
     display: flex;
@@ -12,7 +13,6 @@
     position: relative;
     flex-direction: column;
     align-items: center;
-    margin-top: 49px;
     padding: 0 25px;
     &:not(:last-child)::after {
       content: "";

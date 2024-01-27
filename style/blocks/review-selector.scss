@@ -13,7 +13,7 @@
     cursor: pointer;
     &--active, &:hover {
       .review-selector__link {
-        border: 6px solid $yellow;
+        border-width: 6px;
       }
     }
   }

@@ -1,12 +1,13 @@
 .hero {
   padding: 21px 0 49px 0;
-  background: url("../images/content/header-1.jpg") left 90%/111% no-repeat;
+  background: url("../images/content/header-1.jpg") left 90%/cover no-repeat;
   color: $white;
   &__content {
+    margin-top: 102px;
     max-width: 486px;
   }
   &__heading {
-    margin: 102px 0 17px 0;
+    margin-bottom: 17px;
     font-size: 48px;
     text-transform: uppercase;
     font-weight: 700;

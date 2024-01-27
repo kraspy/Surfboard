@@ -2,6 +2,7 @@
 @import 'layout/normalize.css';
 html, body {
   height: 100%;
+  min-width: 100%;
 }
 
 body {
@@ -208,6 +209,7 @@ p {
 .advantages__list {
   display: flex;
   justify-content: space-between;
+  margin-top: 49px;
 }
 .advantages__item {
   display: flex;
@@ -215,7 +217,6 @@ p {
   position: relative;
   flex-direction: column;
   align-items: center;
-  margin-top: 49px;
   padding: 0 25px;
 }
 .advantages__item:not(:last-child)::after {
@@ -370,14 +371,15 @@ p {
 
 .hero {
   padding: 21px 0 49px 0;
-  background: url("../images/content/header-1.jpg") left 90%/111% no-repeat;
+  background: url("../images/content/header-1.jpg") left 90%/cover no-repeat;
   color: #ffffff;
 }
 .hero__content {
+  margin-top: 102px;
   max-width: 486px;
 }
 .hero__heading {
-  margin: 102px 0 17px 0;
+  margin-bottom: 17px;
   font-size: 48px;
   text-transform: uppercase;
   font-weight: 700;
@@ -472,7 +474,7 @@ p {
   cursor: pointer;
 }
 .review-selector__item--active .review-selector__link, .review-selector__item:hover .review-selector__link {
-  border: 6px solid #fedb3f;
+  border-width: 6px;
 }
 .review-selector__link {
   box-sizing: border-box;
