@@ -10,7 +10,10 @@ body {
 .container {
   width: $page-width;
   height: 100%;
-  margin: 0 auto; 
+  margin: 0 auto;
+  &--full-width {
+    width: auto;
+  }
 }
 .inner-container {
   padding: 0 80px;
