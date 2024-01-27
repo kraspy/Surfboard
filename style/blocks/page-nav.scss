@@ -10,7 +10,6 @@
     display: block;
     width: 18px;
     height: 18px;
-    margin: 3px 0;
     background-image: radial-gradient(
       $white 0,
       $white 3px,
@@ -21,6 +20,9 @@
     border-radius: 50%;
     transition: border 0.3s;
     cursor: pointer;
+    &:not(:last-child) {
+      margin-bottom: 6px;
+    }
     &--active,
     &:hover {
       border: 1px solid $white;

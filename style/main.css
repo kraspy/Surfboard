@@ -11,6 +11,7 @@ body {
 
 .container {
   width: 1100px;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -75,6 +76,12 @@ p {
 .form__row--buttons {
   margin-top: 44px;
 }
+.form__row--mt36 {
+  margin-top: 36px;
+}
+.form__row--mt16 {
+  margin-top: 16px;
+}
 .form__column {
   display: flex;
   flex-direction: column;
@@ -94,7 +101,6 @@ p {
 }
 .form__field--radio {
   width: auto;
-  margin-top: 36px;
 }
 .form__field--radio label {
   margin-bottom: 0;
@@ -156,12 +162,14 @@ p {
   display: block;
   width: 18px;
   height: 18px;
-  margin: 3px 0;
   background-image: radial-gradient(#ffffff 0, #ffffff 3px, transparent 3px, transparent 100%);
   border: 1px solid transparent;
   border-radius: 50%;
   transition: border 0.3s;
   cursor: pointer;
+}
+.page-nav__dot:not(:last-child) {
+  margin-bottom: 6px;
 }
 .page-nav__dot--active, .page-nav__dot:hover {
   border: 1px solid #ffffff;
@@ -355,26 +363,27 @@ p {
 }
 
 .header {
-  padding: 21px 0 49px 0;
-  background: url("../images/content/header-1.jpg") left 90%/111% no-repeat;
-  color: #ffffff;
-}
-.header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header__content {
+
+.hero {
+  padding: 21px 0 49px 0;
+  background: url("../images/content/header-1.jpg") left 90%/111% no-repeat;
+  color: #ffffff;
+}
+.hero__content {
   max-width: 486px;
 }
-.header__heading {
+.hero__heading {
   margin: 102px 0 17px 0;
   font-size: 48px;
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1.18em;
 }
-.header__text {
+.hero__text {
   font-size: 21px;
   margin-bottom: 40px;
 }
@@ -456,25 +465,24 @@ p {
   justify-content: center;
 }
 .review-selector__item {
-  position: relative;
   width: 74px;
   height: 74px;
   border-radius: 50%;
   overflow: hidden;
   cursor: pointer;
 }
-.review-selector__item--active .review-selector__hightlighter, .review-selector__item:hover .review-selector__hightlighter {
-  box-shadow: inset 0 0 0 6px #fedb3f;
+.review-selector__item--active .review-selector__link, .review-selector__item:hover .review-selector__link {
+  border: 6px solid #fedb3f;
 }
-.review-selector__hightlighter {
-  position: absolute;
+.review-selector__link {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  box-shadow: inset 0 0 0 0 #fedb3f;
-  transition: box-shadow 0.3s;
+  border: 0 solid #fedb3f;
+  overflow: hidden;
+  transition: border 0.3s;
 }
 .review-selector__image {
   width: 100%;

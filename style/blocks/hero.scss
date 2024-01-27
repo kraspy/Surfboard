@@ -1,0 +1,19 @@
+.hero {
+  padding: 21px 0 49px 0;
+  background: url("../images/content/header-1.jpg") left 90%/111% no-repeat;
+  color: $white;
+  &__content {
+    max-width: 486px;
+  }
+  &__heading {
+    margin: 102px 0 17px 0;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.18em;
+  }
+  &__text {
+    font-size: 21px;
+    margin-bottom: 40px;
+  }
+}

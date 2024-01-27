@@ -6,6 +6,12 @@
     &--buttons {
       margin-top: 44px;
     }
+    &--mt36 {
+      margin-top: 36px;
+    }
+    &--mt16 {
+      margin-top: 16px;
+    }
   }
   &__column {
     display: flex;
@@ -14,6 +20,7 @@
     &--equal {
       width: 50%;
     }
+
   }
   &__field {
     width: 100%;
@@ -25,7 +32,6 @@
     }
     &--radio {
       width: auto;
-      margin-top: 36px;
       label {
         margin-bottom: 0;
       }
