@@ -1,15 +1,12 @@
 .socials {
   &__items {
     display: flex;
-    gap: 14px;
-  }
-  &__item {
-  }
-  &__link {
+    gap: rem(14px);
   }
   &__link--vk {
     .socials__image {
       background-image: url('../images/social/vk.svg');
+      background-size: cover;
     }
     &:hover {
       .socials__image {
@@ -20,6 +17,7 @@
   &__link--fb {
     .socials__image {
       background-image: url('../images/social/f.svg');
+      background-size: cover;
     }
     &:hover {
       .socials__image {
@@ -30,6 +28,7 @@
   &__link--ig {
     .socials__image {
       background-image: url('../images/social/in.svg');
+      background-size: cover;
     }
     &:hover {
       .socials__image {
@@ -40,6 +39,7 @@
   &__link--tw {
     .socials__image {
       background-image: url('../images/social/tv.svg');
+      background-size: cover;
     }
     &:hover {
       .socials__image {
@@ -49,7 +49,15 @@
 
   }
   &__image {
-    width: 20px;
-    height: 20px;
+    width: rem(20px);
+    height: rem(20px);
+  }
+
+  @include phones {
+    .socials {
+      &__items {
+        justify-content: center;
+      }
+    }
   }
 }

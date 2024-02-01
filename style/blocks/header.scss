@@ -2,4 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include tablets {
+    background-color: $blue;
+    padding: rem(26px) rem(30px);
+  }
+  
+  @include phones {
+    padding: rem(24px) rem(10px);
+  }
 }

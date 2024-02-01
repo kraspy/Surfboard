@@ -1,22 +1,26 @@
 .form {
-  margin-top: 65px;
+  margin-top: rem(65px);
+  &__container {
+    display: flex;
+    gap: rem(22px);
+  }
   &__row {
     display: flex;
-    gap: 22px;
+    gap: rem(22px);
     &--buttons {
-      margin-top: 44px;
+      margin-top: rem(22px);
     }
-    &--mt36 {
-      margin-top: 36px;
+    &--radios {
+      margin-top: rem(14px);
     }
-    &--mt16 {
-      margin-top: 16px;
+    &--checkboxes {
+      margin-top: rem(16px);
     }
   }
   &__column {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: rem(14px);
     &--equal {
       width: 50%;
     }
@@ -25,7 +29,7 @@
   &__field {
     width: 100%;
     &--checkbox {
-      margin-top: 16px;
+      margin-top: rem(16px);
       label {
         margin-bottom: 0;
       }
@@ -39,23 +43,26 @@
   }
   &__label {
     display: flex;
-    gap: 10px;
+    gap: rem(10px);
     align-items: center;
         font-weight: 400;
     color: $white;
     cursor: pointer;
-    margin-bottom: 2px;
+    margin-bottom: rem(2px);
     user-select: none;
   }
   &__control {
     box-sizing: border-box;
-    padding: 18px 12px;
+    padding: rem(18px) rem(12px);
     width: 100%;
-    border: 3px solid transparent;
-    border-radius: 4px;
+    border: rem(3px) solid transparent;
+    border-radius: rem(4px);
     outline: 0;
     &:focus {
-      border: 3px solid $yellow;
+      border: rem(3px) solid $yellow;
+    }
+    &--textarea {
+      height: 150px;
     }
   }
   &__chk {
@@ -64,20 +71,62 @@
       background: url('../images/icons/checkmark.svg') center center no-repeat $white;
     }
     &:checked + .form__radiobox {
-      background-image: radial-gradient($yellow 0, $yellow 6px, $white 6px, $white 100%);
+      background-image: radial-gradient($yellow 0, $yellow rem(6px), $white rem(6px), $white 100%);
     }
   }
   &__checkbox {
+    flex-shrink: 0;
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: rem(25px);
+    height: rem(25px);
     background-color: $white;
   }
   &__radiobox {
+    flex-shrink: 0;
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: rem(25px);
+    height: rem(25px);
     background-color: $white;
     border-radius: 50%;
+  }
+
+  @include tablets {
+    &__container {
+      flex-direction: column;
+    }
+    &__row {
+      &--checkboxes {
+        margin-top: rem(21px);
+      }
+      &--buttons {
+        margin-top: rem(14px);
+        justify-content: center;
+      }
+    }
+    &__column {
+      &--equal {
+        width: 100%;
+      }
+    }
+    &__control {
+      padding: rem(8px) rem(10px);
+      &--textarea {
+        height: 80px;
+      }
+    }
+  }
+
+  @include phones {
+    &__row {
+      &--checkboxes {
+        justify-content: center;
+      }
+      &--radios {
+        justify-content: center;
+      }
+    }
+    &__control {
+      padding: rem(8px) rem(10px);
+    }
   }
 }

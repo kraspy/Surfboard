@@ -1,8 +1,29 @@
 .we-work {
-  padding: 62px 0 109px 0;
+  padding: rem(62px) 0 rem(109px) 0;
   text-align: center;
   background-color: $light-gray;
-}
-.we-work__video {
-  margin-top: 31px;
+  &__video {
+    margin-top: rem(31px);
+    width: rem(662px);
+    height: rem(392px);
+  }
+  
+  @include tablets {
+    display: flex;
+    align-items: center;
+    .container {
+      height: auto;
+    }
+    &__video {
+      width: rem(394px);
+      height: rem(234px);
+    }
+  }
+
+  @include phones {
+    &__video {
+      width: rem(291px);
+      height: rem(180px);
+    }
+  }
 }

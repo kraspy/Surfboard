@@ -1,31 +1,31 @@
 .page-nav {
   position: fixed;
   top: 50%;
-  right: 50px;
+  right: rem(50px);
   transform: translateY(-50%);
   z-index: $z_page-nav;
   &__dots {
   }
   &__dot {
     display: block;
-    width: 18px;
-    height: 18px;
+    width: rem(18px);
+    height: rem(18px);
     background-image: radial-gradient(
       $white 0,
-      $white 3px,
-      transparent 3px,
+      $white rem(3px),
+      transparent rem(3px),
       transparent 100%
     );
-    border: 1px solid transparent;
+    border: rem(1px) solid transparent;
     border-radius: 50%;
     transition: border 0.3s;
     cursor: pointer;
     &:not(:last-child) {
-      margin-bottom: 6px;
+      margin-bottom: rem(6px);
     }
     &--active,
     &:hover {
-      border: 1px solid $white;
+      border: rem(1px) solid $white;
     }
   }
   &__link {

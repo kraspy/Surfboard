@@ -1,20 +1,36 @@
 .section {
+  overflow: hidden;
   height: 100vh;
   box-sizing: border-box;
   &__heading {
-    font-size: 48px;
+    font-size: rem(48px);
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     &--white {
       color: $white;
     }
-    + .section__subheading {
-      width: 436px;
+    &__subheading {
+      text-align: center;
+      width: rem(436px);
       margin: 0 auto;
-      margin-top: 17px;
+      margin-top: rem(17px);
       color: $gray;
       line-height: 1.25;
+    }
+  }
+  @include tablets {
+    &__subheading {
+      padding: 0 rem(120px);
+    }
+  }
+
+  @include phones {
+    &__heading {
+      font-size: rem(40px);
+    }
+    &__subheading {
+      padding: 0 rem(20px);
     }
   }
 }

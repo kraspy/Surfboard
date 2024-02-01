@@ -6,25 +6,27 @@
     .contacts__phone::before {
       content: '';
       display: inline-block;
-      width: 18px;
-      height: 15px;
+      width: rem(18px);
+      height: rem(15px);
       background: center/contain no-repeat url('../images/icons/Call-black.svg');
     }
   }
-  &__address {
-  }
   &__phone {
-    margin-top: 6px;
+    margin-top: rem(6px);
     &::before {
       content: '';
       display: inline-block;
-      width: 18px;
-      height: 15px;
+      width: rem(18px);
+      height: rem(15px);
       background: center/contain no-repeat url('../images/icons/Call.svg');
     }
   }
   &__link {
-    font-size: 22px;
+    font-size: rem(22px);
     text-decoration: none;
+  }
+
+  @include tablets {
+    display: none;
   }
 }

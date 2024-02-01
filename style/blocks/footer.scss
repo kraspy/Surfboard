@@ -1,10 +1,27 @@
 .footer {
-  padding: 17px 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.footer__left {
-}
-.footer__right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: rem(17px) rem(80px);
+  background-color: $white;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include tablets {
+    padding: rem(28px) rem(30px);
+  }
+  @include phones {
+    .container {
+      flex-direction: column;
+      align-items: stretch;
+      gap: rem(20px);
+    }
+    &__left {
+      text-align: center;
+    }
+  }
 }

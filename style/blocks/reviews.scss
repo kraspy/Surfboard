@@ -1,3 +1,11 @@
 .reviews {
-  padding: 62px 79px;
+  padding: rem(62px) rem(79px);
+  @include tablets {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    .container {
+      height: auto;
+    }
+  }
 }

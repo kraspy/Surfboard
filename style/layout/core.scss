@@ -3,20 +3,40 @@ html, body {
   min-width: 100%;
 }
 
+html {
+  font-size: $font-size;
+
+  @include tablets {
+    font-size: $font-size - 1px;
+  }
+
+  @include phones {
+    font-size: $font-size - 2px;
+  }
+}
+
 body {
   font-family: 'Alegreya Sans', sans-serif;
-  font-size: $font-size;
 }
+
+.wrapper {
+  position: relative;
+}
+
 .container {
-  width: $page-width;
+  max-width: $page-width;
   height: 100%;
   margin: 0 auto;
   &--full-width {
     width: auto;
   }
+  @include tablets {
+    width: 100%;
+    padding: 0
+  }
 }
 .inner-container {
-  padding: 0 80px;
+  padding: 0 rem(80px);
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0;

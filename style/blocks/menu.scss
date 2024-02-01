@@ -1,14 +1,16 @@
 .menu {
   flex-grow: 2;
-  margin: 0 47px;
+  margin: 0 rem(47px);
   &__list {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  &__item {
-      }
   &__link {
     text-decoration: none;
+  }
+
+  @include tablets {
+    display: none;
   }
 }

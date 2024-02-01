@@ -1,6 +1,6 @@
 .slider {
   background-color: $second-bg;
-  padding: 65px 0 33px 0;
+  padding: rem(65px) 0 rem(33px) 0;
   &__wrapper {
   }
   &__slides {

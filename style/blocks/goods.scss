@@ -4,7 +4,7 @@
     height: 100%;
   }
   &__item {
-    min-width: 100px;
+    min-width: rem(100px);
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -13,8 +13,8 @@
       .goods__heading {
         transform: rotate(0deg);
 
-        left: 84px;
-        top: 109px;
+        left: rem(84px);
+        top: rem(109px);
       }
       .goods__img {
         filter: brightness(100%)
@@ -30,9 +30,9 @@
   }
   &__heading {
     position: absolute;
-    bottom: 110px;
-    left: -60px;
-    font-size: 48px;
+    bottom: rem(110px);
+    left: rem(-60px);
+    font-size: rem(48px);
     color: $white;
     transform: rotate(-90deg);
   }

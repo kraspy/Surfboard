@@ -1,20 +1,55 @@
 .hero {
-  padding: 21px 0 49px 0;
-  background: url("../images/content/header-1.jpg") left 90%/cover no-repeat;
+  padding-top: rem(21px);
+  background: url("../images/content/header-1.jpg") center 90%/cover no-repeat;
   color: $white;
   &__content {
-    margin-top: 102px;
-    max-width: 486px;
+    margin-top: rem(102px);
+    max-width: rem(486px);
   }
   &__heading {
-    margin-bottom: 17px;
-    font-size: 48px;
+    margin-bottom: rem(17px);
+    font-size: rem(48px);
     text-transform: uppercase;
     font-weight: 700;
     line-height: 1.18em;
   }
   &__text {
-    font-size: 21px;
-    margin-bottom: 40px;
+    font-size: rem(21px);
+    margin-bottom: rem(40px);
+  }
+
+  @include tablets {
+    padding: 0;
+    &__content {
+      height: 100%;
+      margin: 0;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 rem(50px);
+    }
+    &__heading {
+      margin-bottom: rem(9px);
+      text-align: center;
+    }
+    &__text {
+      font-size: rem(21px);
+      margin-bottom: rem(40px);
+    }
+  }
+
+  @include phones {
+    &__content {
+
+    }
+    &__heading {
+      font-size: rem(48px);
+    }
+    &__text {
+      font-size: rem(21px);
+      margin-bottom: rem(40px);
+    }
   }
 }

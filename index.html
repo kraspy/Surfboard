@@ -14,6 +14,9 @@
             <div class="logo">
               <img src="images/logo/Logo.svg" alt="" srcset="" />
             </div>
+            <div class="hamburger" id="hamburger-menu">
+              <div class="hamburger__inner"></div>
+            </div>
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
@@ -52,7 +55,7 @@
             <p class="hero__text">Самый большой выбор серфбордов в мире</p>
             <button type="button" class="btn btn-primary">Заказать</button>
           </section>
-          
+
           <div class="benefits">
             <ul class="benefits__list">
               <li class="benefits__item">
@@ -156,7 +159,7 @@
           </ul>
         </div>
       </section>
-      <section class="section slider">
+      <section class="section slider" style="display: none">
         <div class="container">
           <div class="slider__wrapper">
             <ul class="slider__slides">
@@ -211,7 +214,7 @@
           </div>
         </div>
       </section>
-      <section class="section team">
+      <section class="section team" style="display: none">
         <div class="container">
           <h2 class="section__heading">Команда</h2>
           <ul class="team__list">
@@ -291,7 +294,7 @@
           </ul>
         </div>
       </section>
-      <section class="section goods">
+      <section class="section goods" style="display: none">
         <div class="container container--full-width">
           <ul class="goods__items">
             <li class="goods__item goods__item--active">
@@ -406,11 +409,11 @@
       <section class="section order">
         <div class="container">
           <div class="section__heading section__heading--white">
-            Закажите доску
+            Закажите доставку
           </div>
           <div class="order__form">
             <form class="form" method="post" action="#">
-              <div class="form__row">
+              <div class="form__container">
                 <div class="form__column form__column--equal">
                   <div class="form__row">
                     <div class="form__field">
@@ -491,15 +494,14 @@
                         >Комментарий</label
                       >
                       <textarea
-                        rows="6"
-                        class="form__control"
+                        class="form__control form__control--textarea"
                         name="comment"
                         id="comment"
                       ></textarea>
                     </div>
                   </div>
                   <div class="form__column">
-                    <div class="form__row form__row--mt36">
+                    <div class="form__row form__row--radios">
                       <div class="form__field form__field--radio">
                         <label class="form__label" for="pay_cash">
                           <input
@@ -528,19 +530,17 @@
                         >
                       </div>
                     </div>
-                    <div class="form__row form__row--mt16">
-                      <div class="form__field">
-                        <label class="form__label" for="not-call">
-                          <input
-                            class="form__chk"
-                            type="checkbox"
-                            name="not-call"
-                            id="not-call"
-                          />
-                          <div class="form__checkbox"></div>
-                          Не перезванивать</label
-                        >
-                      </div>
+                    <div class="form__row form__row--checkboxes">
+                      <label class="form__label" for="not-call">
+                        <input
+                          class="form__chk"
+                          type="checkbox"
+                          name="not-call"
+                          id="not-call"
+                        />
+                        <div class="form__checkbox"></div>
+                        Не перезванивать</label
+                      >
                     </div>
                   </div>
                   <div class="form__row form__row--buttons">

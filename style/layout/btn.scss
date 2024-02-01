@@ -6,11 +6,11 @@
 }
 
 .btn-primary {
-  font-size: 16px;
+  font-size: rem(16px);
   text-transform: uppercase;
-  padding: 21px 41px;
+  padding: rem(21px) rem(41px);
   background-color: $yellow;
-  border-radius: 40px;
+  border-radius: rem(40px);
   font-weight: 800;
   transition: background-color .3s;
   &:hover {
