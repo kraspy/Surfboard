@@ -25,6 +25,7 @@ body {
 
 .container {
   max-width: $page-width;
+  padding: 0 rem(20px);
   height: 100%;
   margin: 0 auto;
   &--full-width {

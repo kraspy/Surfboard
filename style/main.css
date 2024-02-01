@@ -34,6 +34,7 @@ body {
 
 .container {
   max-width: 940px;
+  padding: 0 1.1111111111rem;
   height: 100%;
   margin: 0 auto;
 }
@@ -420,6 +421,7 @@ p {
 .contacts {
   font-style: normal;
   text-decoration: none;
+  white-space: nowrap;
 }
 .contacts--black {
   color: #292929;
@@ -433,6 +435,7 @@ p {
 }
 .contacts__phone {
   margin-top: 0.3333333333rem;
+  white-space: nowrap;
 }
 .contacts__phone::before {
   content: "";
@@ -634,9 +637,12 @@ p {
   margin: 0 2.6111111111rem;
 }
 .menu__list {
+  padding-top: 10px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 .menu__link {
   text-decoration: none;

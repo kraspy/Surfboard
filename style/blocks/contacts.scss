@@ -1,6 +1,7 @@
 .contacts {
   font-style: normal;
   text-decoration: none;
+  white-space: nowrap;
   &--black {
     color: $black;
     .contacts__phone::before {
@@ -13,12 +14,14 @@
   }
   &__phone {
     margin-top: rem(6px);
+    white-space: nowrap;
     &::before {
       content: '';
       display: inline-block;
       width: rem(18px);
       height: rem(15px);
       background: center/contain no-repeat url('../images/icons/Call.svg');
+      
     }
   }
   &__link {

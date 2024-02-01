@@ -2,9 +2,12 @@
   flex-grow: 2;
   margin: 0 rem(47px);
   &__list {
+    padding-top: 10px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
   &__link {
     text-decoration: none;
