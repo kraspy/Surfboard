@@ -316,7 +316,7 @@ p {
   transform: translate(50%, -10px);
   right: 0;
   top: 3.5555555556rem;
-  background: url("../images/icons/sprite.svg#advantages-divider");
+  background: url("../images/icons/advantages-divider.svg");
 }
 .advantages__item:first-child {
   padding-left: 0;
@@ -405,6 +405,11 @@ p {
 }
 .benefits__icon {
   display: flex;
+  width: 45px;
+  height: 45px;
+}
+.benefits__img {
+  width: 100%;
 }
 .benefits__content {
   width: 5rem;
@@ -641,7 +646,6 @@ p {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 10px;
 }
 .menu__link {
@@ -650,6 +654,7 @@ p {
 @media screen and (max-width: 768px) {
   .menu {
     display: none;
+    justify-content: center;
   }
 }
 
