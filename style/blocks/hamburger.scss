@@ -1,12 +1,13 @@
 .hamburger {
-  position: relative;
+  display: none;
+  position: fixed;
+  top: rem(35px);
+  right: rem(30px);
   width: rem(26px);
   height: rem(24px);
   cursor: pointer;
-  display: none;
   align-items: center;
   &__inner {
-    content: '';
     width: 100%;
     height: rem(4px);
     background-color: $white;

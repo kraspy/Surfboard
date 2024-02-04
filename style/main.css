@@ -248,6 +248,12 @@ p {
 .page-nav__dot--active, .page-nav__dot:hover {
   border: 0.0555555556rem solid #ffffff;
 }
+@media screen and (max-width: 768px) {
+  .page-nav {
+    display: none;
+  }
+}
+
 .section {
   overflow: hidden;
   height: 100vh;
@@ -544,15 +550,16 @@ p {
 }
 
 .hamburger {
-  position: relative;
+  display: none;
+  position: fixed;
+  top: 1.9444444444rem;
+  right: 1.6666666667rem;
   width: 1.4444444444rem;
   height: 1.3333333333rem;
   cursor: pointer;
-  display: none;
   align-items: center;
 }
 .hamburger__inner {
-  content: "";
   width: 100%;
   height: 0.2222222222rem;
   background-color: #ffffff;
@@ -635,6 +642,10 @@ p {
     font-size: 1.1666666667rem;
     margin-bottom: 2.2222222222rem;
   }
+}
+
+.map {
+  position: relative;
 }
 
 .menu {
@@ -800,37 +811,17 @@ p {
   display: flex;
   gap: 0.7777777778rem;
 }
-.socials__link--vk .socials__image {
-  background-image: url("../images/social/vk.svg");
-  background-size: cover;
-}
-.socials__link--vk:hover .socials__image {
-  background-image: url("../images/social/vk-hover.svg");
-}
-.socials__link--fb .socials__image {
-  background-image: url("../images/social/f.svg");
-  background-size: cover;
-}
-.socials__link--fb:hover .socials__image {
-  background-image: url("../images/social/f-hover.svg");
-}
-.socials__link--ig .socials__image {
-  background-image: url("../images/social/in.svg");
-  background-size: cover;
-}
-.socials__link--ig:hover .socials__image {
-  background-image: url("../images/social/in-hover.svg");
-}
-.socials__link--tw .socials__image {
-  background-image: url("../images/social/tv.svg");
-  background-size: cover;
-}
-.socials__link--tw:hover .socials__image {
-  background-image: url("../images/social/tv-hover.svg");
-}
-.socials__image {
+.socials__link {
   width: 1.1111111111rem;
   height: 1.1111111111rem;
+}
+.socials__icon {
+  width: 20px;
+  height: 20px;
+  fill: #B3B3B3;
+}
+.socials__icon:hover {
+  fill: #000000;
 }
 @media screen and (max-width: 480px) {
   .socials .socials__items {

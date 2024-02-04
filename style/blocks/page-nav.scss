@@ -30,4 +30,7 @@
   }
   &__link {
   }
+  @include tablets {
+    display: none;
+  }
 }
