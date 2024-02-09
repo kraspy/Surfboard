@@ -1,8 +1,18 @@
 .table {
-}
-.table__row {
-}
-.table__heading {
-}
-.table__cell {
+  display: flex;
+
+  &__row {
+    display: flex;
+    gap: 44px;
+  }
+  &__heading {
+    font-weight: 400;
+    color: $gray;
+  }
+  &__cell {
+    font-weight: 700;
+  }
+  @include tablets {
+    justify-content: center;
+  }
 }

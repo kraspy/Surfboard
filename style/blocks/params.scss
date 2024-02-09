@@ -1,19 +1,73 @@
 .params {
-  
+  padding: 15px 0;
+  &__info {
+    position: relative;
+    width: rem(91px);
+    height: rem(91px);
+    background-color: $dark-gray;
+    border-radius: 4px;
+  }
+  &__info:hover .info__menu {
+    left: 0;
+    opacity: 1;
 }
-.params__image {
-  width: rem(91px);
-  height: rem(91px);
-  background-color: $dark-gray;
-}
-.params__heading {
-}
-.params__text {
-}
-.params__table {
-}
+  &__image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  &__img {
+    width: rem(38px);
+    height: rem(38px);
+  }
+  &__title {
+    font-size: rem(14px);
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
 
-.params__price {
-}
-.params__action {
+  &__heading {
+    margin-top: rem(50px);
+    font-size: rem(36px);
+    text-transform: uppercase;
+  }
+  &__text {
+    margin-top: rem(24px);
+    color: $gray;
+  }
+  &__table {
+    margin-top: rem(24px);
+  }
+  &__footer {
+    margin-top: rem(24px);
+    display: flex;
+    align-items: center;
+    gap: rem(50px);
+  }
+  &__price {
+    font-size: rem(60px);
+    color: $price-color;
+  }
+  &__action {
+
+  }
+  @include tablets {
+    &__info {
+      display: none;
+    }
+    &__heading {
+      font-size: rem(30px);
+    }
+    &__footer {
+      justify-content: center;
+    }
+    &__price {
+      font-weight: 300;
+    }
+  }
 }

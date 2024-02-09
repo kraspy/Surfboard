@@ -6,7 +6,7 @@
     <title>Surfboard :: Главная</title>
     <link rel="stylesheet" href="style/main.css" />
   </head>
-  <body>
+  <body class="body">
     <div class="wrapper">
       <div class="section hero">
         <div class="container">
@@ -143,26 +143,85 @@
           </ul>
         </div>
       </section>
-      <section class="section slider" style="display: none">
+      <section class="section slider">
         <div class="container">
           <div class="slider__wrapper">
             <ul class="slider__slides">
               <li class="slide">
                 <div class="slide__left">
-                  <img
-                    src="images/slider/longboard-1.png"
-                    class="slide__image"
-                    alt="Серфборды"
-                  />
+                  <div class="slide__image">
+                    <img
+                      src="images/slider/longboard-1.png"
+                      class="slide__img"
+                      alt="Серфборды"
+                    />
+                  </div>
                 </div>
                 <div class="slide__right">
                   <div class="params">
-                    <div class="params__image">
-                      <img
-                        src="images/slider/params.svg"
-                        class="params__image"
-                        alt="Серфборды"
-                      />
+                    <div class="params__info">
+                      <div class="info__menu">
+                        <ul class="info__list">
+                          <li class="info__item">
+                            <svg class="info__icon">
+                              <use
+                                xlink
+                                href="images/icons/prod-sprite.svg#length"
+                              ></use>
+                            </svg>
+                            <div class="info__desc">Длина доски</div>
+                            <div class="info__data">от 2,5 м</div>
+                          </li>
+                          <li class="info__item">
+                            <svg class="info__icon">
+                              <use
+                                xlink
+                                href="images/icons/prod-sprite.svg#width"
+                              ></use>
+                            </svg>
+                            <div class="info__desc">Ширина доски</div>
+                            <div class="info__data">от 40 см</div>
+                          </li>
+                          <li class="info__item">
+                            <svg class="info__icon">
+                              <use
+                                xlink
+                                href="images/icons/prod-sprite.svg#thickness"
+                              ></use>
+                            </svg>
+                            <div class="info__desc">Толщина</div>
+                            <div class="info__data">8 см</div>
+                          </li>
+                          <li class="info__item">
+                            <svg class="info__icon">
+                              <use
+                                xlink
+                                href="images/icons/prod-sprite.svg#life-time"
+                              ></use>
+                            </svg>
+                            <div class="info__desc">Срок службы</div>
+                            <div class="info__data">5 лет</div>
+                          </li>
+                          <li class="info__item">
+                            <svg class="info__icon">
+                              <use
+                                xlink
+                                href="images/icons/prod-sprite.svg#weight"
+                              ></use>
+                            </svg>
+                            <div class="info__desc">Вес</div>
+                            <div class="info__data">7-8 кг</div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="params__image">
+                        <img
+                          src="images/slider/params.svg"
+                          class="params__img"
+                          alt="Серфборды"
+                        />
+                        <p class="params__title">Параметры</p>
+                      </div>
                     </div>
                     <h3 class="params__heading">Лонгборд 2.0</h3>
                     <p class="params__text">
@@ -182,8 +241,113 @@
                           <td class="table__cell">от 40 сантиметров</td>
                         </tr>
                       </table>
-                      <div class="flex-column">
+                      <div class="params__footer">
                         <div class="params__price">7000 ₽</div>
+                        <div class="params__action">
+                          <button type="button" class="btn btn-primary">
+                            Заказать
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="slide">
+                <div class="slide__left">
+                  <img
+                    src="images/slider/longboard-2.png"
+                    class="slide__image"
+                    alt="Серфборды"
+                  />
+                </div>
+                <div class="slide__right">
+                  <div class="params">
+                    <div class="params__info">
+                      <div class="info__menu">
+                        <ul class="info__list">
+                          <li class="info__item">
+                            <svg class="info__icon">
+                              <use
+                                xlink
+                                href="images/icons/prod-sprite.svg#length"
+                              ></use>
+                            </svg>
+                            <div class="info__desc">Длина доски</div>
+                            <div class="info__data">от 2,5 м</div>
+                          </li>
+                          <li class="info__item">
+                            <svg class="info__icon">
+                              <use
+                                xlink
+                                href="images/icons/prod-sprite.svg#width"
+                              ></use>
+                            </svg>
+                            <div class="info__desc">Ширина доски</div>
+                            <div class="info__data">от 40 см</div>
+                          </li>
+                          <li class="info__item">
+                            <svg class="info__icon">
+                              <use
+                                xlink
+                                href="images/icons/prod-sprite.svg#thickness"
+                              ></use>
+                            </svg>
+                            <div class="info__desc">Толщина</div>
+                            <div class="info__data">8 см</div>
+                          </li>
+                          <li class="info__item">
+                            <svg class="info__icon">
+                              <use
+                                xlink
+                                href="images/icons/prod-sprite.svg#life-time"
+                              ></use>
+                            </svg>
+                            <div class="info__desc">Срок службы</div>
+                            <div class="info__data">5 лет</div>
+                          </li>
+                          <li class="info__item">
+                            <svg class="info__icon">
+                              <use
+                                xlink
+                                href="images/icons/prod-sprite.svg#weight"
+                              ></use>
+                            </svg>
+                            <div class="info__desc">Вес</div>
+                            <div class="info__data">7-8 кг</div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="params__image">
+                        <img
+                          src="images/slider/params.svg"
+                          class="params__img"
+                          alt="Серфборды"
+                        />
+                        <p class="params__title">Параметры</p>
+                      </div>
+                    </div>
+                    <h3 class="params__heading">Шортборд</h3>
+                    <p class="params__text">
+                      Самые быстрые доски для профессионалов. Размеры шортбордов
+                      позволяют быстро набирать скорость, делать различные трюки
+                      на волне, включая резкие повороты и развороты, флоатеры
+                      (проезды по самому гребню волны), различные прыжки с
+                      вращениями или без, а также катание в трубах.
+                    </p>
+                    <div class="params__table">
+                      <table class="table">
+                        <tr class="table__row">
+                          <th class="table__heading">Длина доски</th>
+                          <th class="table__heading">Ширина доски</th>
+                        </tr>
+                        <tr class="table__row">
+                          <td class="table__cell">от 1,5 метров</td>
+                          <td class="table__cell">от 30 сантиметров</td>
+                        </tr>
+                      </table>
+                      <div class="params__footer">
+                        <div class="params__price">12000 ₽</div>
                         <div class="params__action">
                           <button type="button" class="btn btn-primary">
                             Заказать
@@ -196,9 +360,15 @@
               </li>
             </ul>
           </div>
+          <button type="button" class="btn btn-slide" id="slide-left">
+            <img src="images/slider/less.svg" alt="Slide left" />
+          </button>
+          <button type="button" class="btn btn-slide" id="slide-right">
+            <img src="images/slider/more.svg" alt="Slide right" />
+          </button>
         </div>
       </section>
-      <section class="section team" style="display: none">
+      <section class="section team">
         <div class="container">
           <h2 class="section__heading">Команда</h2>
           <ul class="team__list">
@@ -278,7 +448,7 @@
           </ul>
         </div>
       </section>
-      <section class="section goods" style="display: none">
+      <section class="section goods">
         <div class="container container--full-width">
           <ul class="goods__items">
             <li class="goods__item goods__item--active">
@@ -634,8 +804,40 @@
         </li>
       </ul>
     </nav>
-    <div class="hamburger" id="hamburger-menu">
-      <div class="hamburger__inner"></div>
+    <div class="overlay" id="overlay">
+      <div class="overlay__menu">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Серфборды</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Команда</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Меню</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Отзывы</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Как мы работаем</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Контакты </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
+    <div class="hamburger" id="hamburger-menu">
+      <div class="hamburger__plank"></div>
+      <div class="hamburger__plank"></div>
+      <div class="hamburger__plank"></div>
+    </div>
+    <script src="js/main.js"></script>
   </body>
 </html>

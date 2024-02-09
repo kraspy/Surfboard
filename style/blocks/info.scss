@@ -1,0 +1,41 @@
+.info {
+  &__menu {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.80);
+    box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 0.06);
+    padding: rem(28px) rem(30px);
+    width: rem(291px);
+    left: rem(-9999px);
+    color: $black;
+    font-size: rem(16px);
+    font-weight: 500;
+    opacity: 0.8;
+    transition: opacity 1s;
+    border-radius: rem(4px);
+    margin-left: rem(90px);
+    box-sizing: border-box;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(8px);
+    &:last-child {
+        margin-bottom: 0;
+    }
+  }
+  &__icon {
+    width: rem(32px);
+    height: rem(32px);
+  }
+  &__desc {
+
+    color: black;
+    font-size: rem(16px);
+    font-weight: 700;
+  }
+  &__data {
+    flex: 1;
+    text-align: end;
+    color: black;
+  }
+}

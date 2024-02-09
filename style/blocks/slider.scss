@@ -1,8 +1,28 @@
 .slider {
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   background-color: $second-bg;
   padding: rem(65px) 0 rem(33px) 0;
+  overflow: hidden;
   &__wrapper {
+    overflow: hidden;
+    height: 100%;
   }
   &__slides {
+    display: flex;
+    width: 200%;
+    height: 100%;
+    position: relative;
+    transition: right;
+  }
+  @include tablets {
+    padding: rem(15px) rem(123px);
+  }
+  @include phones {
+    padding: rem(15px) rem(50px);
   }
 }

@@ -1,11 +1,38 @@
 .slide {
+  flex: 1;
   display: flex;
+  gap: 60px;
   justify-content: stretch;
   &__left {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background: url('../images/slider/spot.svg') center center no-repeat
   }
   &__image {
+    height: 100%;
+  }
+  &__img {
+    height: 100%;
   }
   &__right {
+    flex: 1;
+  }
+  @include tablets {
+    flex-direction: column;
+    gap: 20px;
+    &__left {
+      height: 35%;
+    }
+    &__right {
+      text-align: center;
+      height: 45%;
+    }
+  }
+  @include phones {
+    &__left {
+      height: 20%;
+    }
   }
 }

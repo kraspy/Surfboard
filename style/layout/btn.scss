@@ -25,3 +25,22 @@
     color: $yellow
   }
 }
+
+.btn-slide {
+  position: absolute;
+  top: 50%;
+}
+
+#slide-left {
+  left: 0;
+  @include tablets {
+    top: 25%;
+  }
+}
+
+#slide-right {
+  right: 0;
+  @include tablets {
+    top: 25%;
+  }
+}
