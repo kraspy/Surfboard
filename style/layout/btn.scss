@@ -34,13 +34,13 @@
 #slide-left {
   left: 0;
   @include tablets {
-    top: 25%;
+    top: 30%;
   }
 }
 
 #slide-right {
   right: 0;
   @include tablets {
-    top: 25%;
+    top: 30%;
   }
 }
