@@ -765,7 +765,6 @@ p {
   border-radius: 4px;
 }
 .params__info:hover .info__menu {
-  left: 0;
   opacity: 1;
 }
 .params__image {
@@ -827,18 +826,17 @@ p {
 
 .info__menu {
   position: absolute;
+  left: 100%;
   background: rgba(255, 255, 255, 0.8);
   box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 0.06);
   padding: 1.5555555556rem 1.6666666667rem;
   width: 16.1666666667rem;
-  left: -555.5rem;
   color: #292929;
   font-size: 0.8888888889rem;
   font-weight: 500;
-  opacity: 0.8;
-  transition: opacity 1s;
+  opacity: 0;
+  transition: opacity 0.3s;
   border-radius: 0.2222222222rem;
-  margin-left: 5rem;
   box-sizing: border-box;
 }
 .info__item {
