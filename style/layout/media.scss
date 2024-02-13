@@ -2,11 +2,11 @@
   @return $px / $font-size + 0rem;
 }
 
-@media screen and (max-width: 1100px) {
-  .container {
-    width: 100%;
-  }
-}
+// @media screen and (max-width: 1100px) {
+//   .container {
+//     width: 100%;
+//   }
+// }
 
 @mixin tablets {
   @media screen and (max-width: $tablets) {

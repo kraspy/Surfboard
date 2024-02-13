@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Surfboard :: Главная</title>
+    <link rel="stylesheet" href="style/layout/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/layout/owl.theme.default.min.css">
     <link rel="stylesheet" href="style/main.css" />
   </head>
   <body class="body">
@@ -388,14 +390,13 @@
                   alt="Серфборды"
                 />
               </div>
+              <div class="team__title">
+                <span class="team__icon">▶︎</span>
+                <span class="team__heading">Борис Федорович</span>
+              </div>
               <div class="team__content">
-                <details>
-                  <summary>
-                    <span class="team__heading">Борис Федорович</span>
-                  </summary>
-                  <p class="team__text">Оператор</p>
-                  <p class="team__description">Description</p>
-                </details>
+                <p class="team__text">Оператор</p>
+                <p class="team__description">Участвует в разработке серфбордов</p>
               </div>
             </li>
             <li class="team__item">
@@ -406,14 +407,13 @@
                   alt="Серфборды"
                 />
               </div>
+              <div class="team__title">
+                <span class="team__icon">▶︎</span>
+                <span class="team__heading">Ольга Невзорова</span>
+              </div>
               <div class="team__content">
-                <details>
-                  <summary>
-                    <span class="team__heading">Ольга Невзорова</span>
-                  </summary>
-                  <p class="team__text">Оператор</p>
-                  <p class="team__description">Description</p>
-                </details>
+                <p class="team__text">Оператор</p>
+                <p class="team__description">Участвует в разработке серфбордов</p>
               </div>
             </li>
             <li class="team__item">
@@ -425,14 +425,13 @@
                   alt="Серфборды"
                 />
               </div>
+              <div class="team__title">
+                <span class="team__icon">▶︎</span>
+                <span class="team__heading">Ингвар Нильсон</span>
+              </div>
               <div class="team__content">
-                <details>
-                  <summary>
-                    <span class="team__heading">Ингвар Нильсон</span>
-                  </summary>
-                  <p class="team__text">Оператор</p>
-                  <p class="team__description">Description</p>
-                </details>
+                <p class="team__text">Спортсмен</p>
+                <p class="team__description">Участвует в разработке серфбордов</p>
               </div>
             </li>
             <li class="team__item">
@@ -443,14 +442,13 @@
                   alt="Серфборды"
                 />
               </div>
+              <div class="team__title">
+                <span class="team__icon">▶︎</span>
+                <span class="team__heading">Екатерина Иванова</span>
+              </div>
               <div class="team__content">
-                <details>
-                  <summary>
-                    <span class="team__heading">Екатерина Иванова</span>
-                  </summary>
-                  <p class="team__text">Оператор</p>
-                  <p class="team__description">Description</p>
-                </details>
+                <p class="team__text">Спортсмен</p>
+                <p class="team__description">Участвует в разработке серфбордов</p>
               </div>
             </li>
           </ul>
@@ -497,28 +495,74 @@
       <section class="section reviews">
         <div class="container">
           <div class="section__heading">Отзывы</div>
-          <article class="review-card">
-            <div class="review-card__left">
-              <div class="review-card__image">
-                <img
-                  src="images/content/review-user-1.png"
-                  class="review-card__image"
-                  alt="Отзыв"
-                />
+          <div class="owl-carousel">
+            <div class="review-card">
+              <div class="review-card__left">
+                <div class="review-card__image">
+                  <img
+                    src="images/content/review-user-1.png"
+                    class="review-card__image"
+                    alt="Отзыв"
+                  />
+                </div>
+              </div>
+              <div class="review-card__right">
+                <h3 class="review-card__heading">Лучший дизайн</h3>
+                <p class="review-card__text">
+                  Я увидела доски на сайте и влюбилась в их дизайн. К летнему
+                  сезону я заказала себе доску в SurfBoard. Дизайнер команды -
+                  волшебница! Она учла все мои предпочтения и комментарии. В итоге
+                  получился прекрасный дизайн. А я катаюсь на доске, которая мне
+                  нравится)
+                </p>
+                <p class="review-card__author">Ольга Макарова</p>
               </div>
             </div>
-            <div class="review-card__right">
-              <h3 class="review-card__heading">Лучший дизайн</h3>
-              <p class="review-card__text">
-                Я увидела доски на сайте и влюбилась в их дизайн. К летнему
-                сезону я заказала себе доску в SurfBoard. Дизайнер команды -
-                волшебница! Она учла все мои предпочтения и комментарии. В итоге
-                получился прекрасный дизайн. А я катаюсь на доске, которая мне
-                нравится)
-              </p>
-              <p class="review-card__author">Ольга Макарова</p>
+            <div class="review-card">
+              <div class="review-card__left">
+                <div class="review-card__image">
+                  <img
+                    src="images/content/review-user-2.png"
+                    class="review-card__image"
+                    alt="Отзыв"
+                  />
+                </div>
+              </div>
+              <div class="review-card__right">
+                <h3 class="review-card__heading">Лучший дизайн</h3>
+                <p class="review-card__text">
+                  Я увидела доски на сайте и влюбилась в их дизайн. К летнему
+                  сезону я заказала себе доску в SurfBoard. Дизайнер команды -
+                  волшебница! Она учла все мои предпочтения и комментарии. В итоге
+                  получился прекрасный дизайн. А я катаюсь на доске, которая мне
+                  нравится)
+                </p>
+                <p class="review-card__author">Ольга Макарова</p>
+              </div>
             </div>
-          </article>
+            <div class="review-card">
+              <div class="review-card__left">
+                <div class="review-card__image">
+                  <img
+                    src="images/content/review-user-3.png"
+                    class="review-card__image"
+                    alt="Отзыв"
+                  />
+                </div>
+              </div>
+              <div class="review-card__right">
+                <h3 class="review-card__heading">Лучший дизайн</h3>
+                <p class="review-card__text">
+                  Я увидела доски на сайте и влюбилась в их дизайн. К летнему
+                  сезону я заказала себе доску в SurfBoard. Дизайнер команды -
+                  волшебница! Она учла все мои предпочтения и комментарии. В итоге
+                  получился прекрасный дизайн. А я катаюсь на доске, которая мне
+                  нравится)
+                </p>
+                <p class="review-card__author">Ольга Макарова</p>
+              </div>
+            </div>
+          </div>
           <div class="review-selector">
             <ul class="review-selector__list">
               <li class="review-selector__item review-selector__item--active">
@@ -846,6 +890,8 @@
       <div class="hamburger__plank"></div>
       <div class="hamburger__plank"></div>
     </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
