@@ -617,8 +617,8 @@
           <div class="section__heading section__heading--white">
             Закажите доставку
           </div>
-          <div class="order__form">
-            <form class="form" method="post" action="#">
+          <div class="order__form" id="order-form">
+            <form id="orderForm" class="form" method="post" action="#">
               <div class="form__container">
                 <div class="form__column form__column--equal">
                   <div class="form__row">
@@ -629,6 +629,7 @@
                         type="text"
                         name="name"
                         id="name"
+                        required
                       />
                     </div>
                     <div class="form__field">
@@ -638,6 +639,7 @@
                         type="tel"
                         name="phone"
                         id="phone"
+                        required
                       />
                     </div>
                   </div>
@@ -703,6 +705,7 @@
                         class="form__control form__control--textarea"
                         name="comment"
                         id="comment"
+                        required
                       ></textarea>
                     </div>
                   </div>
@@ -750,7 +753,7 @@
                     </div>
                   </div>
                   <div class="form__row form__row--buttons">
-                    <button type="submit" class="btn btn-primary">
+                    <button id="submit" type="submit" class="btn btn-primary">
                       Заказать
                     </button>
                     <button type="reset" class="btn btn-reset">Очистить</button>
@@ -885,6 +888,15 @@
         </nav>
       </div>
     </div>
+    <div class="modal" id="modal">
+      <div class="modal__active">
+          <div class="modal__window">
+            <p class="modal__message">Some message</p>
+            <button type="button" id="closeModal" class="btn btn-primary btn-modal">ОК</button>
+          </div>
+        </div>
+    </div>
+  
     <div class="hamburger" id="hamburger-menu">
       <div class="hamburger__plank"></div>
       <div class="hamburger__plank"></div>
