@@ -1073,6 +1073,18 @@ p {
   justify-content: space-between;
   margin-top: 2.9444444444rem;
 }
+.team__list--mobile {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.team__list--mobile .team__item {
+  width: 40%;
+}
+.team__list--mobile .team__title {
+  justify-content: center;
+  margin-bottom: 10px;
+}
 .team__item {
   width: 20%;
 }
@@ -1090,7 +1102,7 @@ p {
   transform: rotate(90deg);
 }
 .team__title--active + .team__content {
-  max-height: 200px;
+  max-height: 1000px;
 }
 .team__heading {
   font-size: 1.1666666667rem;
@@ -1122,6 +1134,14 @@ p {
   padding-bottom: 2.2222222222rem;
   color: #666;
   font-weight: 300;
+}
+@media screen and (max-width: 768px) {
+  .team__list--desktop {
+    display: none;
+  }
+  .team__list--mobile {
+    display: flex;
+  }
 }
 
 .we-work {

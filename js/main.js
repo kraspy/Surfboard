@@ -51,7 +51,7 @@ teamTitles.forEach(element => {
 })
 
 
-// Owl carousel
+// Owl carousel :: Reviews
 $(document).ready(function(){
   var owl = $(".owl-carousel").owlCarousel({
     'items': 1,
