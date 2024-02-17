@@ -1142,6 +1142,9 @@ p {
   .team__list--mobile {
     display: flex;
   }
+  .team__list--mobile .team__item {
+    width: 100%;
+  }
 }
 
 .we-work {
