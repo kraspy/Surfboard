@@ -1143,7 +1143,7 @@ p {
     display: flex;
   }
   .team__list--mobile .team__item {
-    width: 100%;
+    width: 50%;
   }
 }
 
