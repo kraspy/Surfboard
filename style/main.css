@@ -974,7 +974,7 @@ p {
 .slider__slides {
   display: flex;
   position: relative;
-  transition: right;
+  transition: right 0.3s;
 }
 @media screen and (max-width: 768px) {
   .slider {
@@ -1088,6 +1088,12 @@ p {
 .team__item {
   width: 20%;
 }
+.team__item--active .team__heading::before {
+  transform: rotate(0deg);
+}
+.team__item--active .team__content {
+  max-height: 1000px;
+}
 .team__img {
   width: 100%;
 }
@@ -1098,23 +1104,23 @@ p {
   margin-top: 0.9444444444rem;
   cursor: pointer;
 }
-.team__title--active > .team__icon {
-  transform: rotate(90deg);
-}
-.team__title--active + .team__content {
-  max-height: 1000px;
-}
 .team__heading {
+  padding-left: 15px;
+  position: relative;
   font-size: 1.1666666667rem;
   font-weight: 700;
 }
-.team__icon {
-  width: 12px;
-  height: 12px;
+.team__heading::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  background: url("../images/icons/polygon.svg") center center/cover no-repeat;
   display: inline-block;
-  font-size: 0.6666666667rem;
-  transform: rotate(-90deg);
-  transform-origin: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(-180deg);
+  transform-origin: center;
   transition: transform 0.3s;
 }
 .team__content {

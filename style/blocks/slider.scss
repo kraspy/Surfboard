@@ -15,7 +15,7 @@
   &__slides {
     display: flex;
     position: relative;
-    transition: right;
+    transition: right .3s;
   }
   @include tablets {
     padding: rem(30px) 10%;

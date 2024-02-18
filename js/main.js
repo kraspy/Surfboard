@@ -39,14 +39,14 @@ function closeAllTeamTitles(current_element) {
     if ( element === current_element) {
       return
     }
-    element.classList.remove('team__title--active');
+    element.closest('.team__title').classList.remove('team__item--active');
   })
 }
 
 teamTitles.forEach(element => {
   element.addEventListener('click', function() {
     closeAllTeamTitles(this);
-    element.classList.toggle('team__title--active');
+    element.closest('.team__item').classList.toggle('team__item--active');
   })
 })
 
@@ -122,6 +122,7 @@ sumbitBtn.addEventListener('click', (event) => {
         showModal(xhr.response.message, 'red');
       } else {
         showModal(xhr.response.message, 'green');
+        orderForm.reset();
       }
     })
 
