@@ -163,3 +163,43 @@ function resetFieldsStyle(fields) {
     field_label.removeAttribute('style');
   }
 }
+
+
+// Horizontal menu
+const goodsList = document.querySelector('.goods__items');
+
+// close all items
+function remove_class_from_all_items() {
+  goodsList.querySelectorAll('.goods__item').forEach(item => {
+    item.classList.remove('goods__item--active');
+  })
+}
+
+goodsList.addEventListener('click', (e) => {
+  let TARGET_TAG_NAME = 'a';
+  let link = e.target.closest('.goods__link');
+  if (link) {
+    e.preventDefault();
+    let currentGoodsItem = link.closest('.goods__item');
+    if (currentGoodsItem.classList.contains('goods__item--active')) {
+      currentGoodsItem.classList.remove('goods__item--active');
+      return;
+    }
+    remove_class_from_all_items();
+    let goodsItem = link.closest('.goods__item');
+    goodsItem.classList.toggle('goods__item--active');
+  }
+
+  if (e.target.tagName === TARGET_TAG_NAME) {
+    console.log('prevented');
+    e.preventDefault();
+  }
+  
+  
+	// for (tab of colorsName) {
+	// 	if (e.target === tab || e.target === tab.childNodes[1] || tab.parentNode.classList.contains('goods__item--active"')) {
+	// 		tab.parentNode.classList.toggle('goods__item--active"');
+	// 	}
+	// }
+});
+

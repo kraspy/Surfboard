@@ -1,25 +1,50 @@
 .goods {
+  color: $white;
+  &__container {
+    background: url(../images/content/goods-1.jpg) center center/cover no-repeat;
+    justify-content: flex-start;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  &__title {
+    text-align: left;
+    padding-top: 8%;
+    padding-left: 8%;
+    margin-bottom: 0;
+  }
   &__items {
     display: flex;
     height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
   &__item {
+    display: flex;
     min-width: rem(100px);
     height: 100%;
     position: relative;
     overflow: hidden;
     &--active {
-      flex-grow: 2;
-      .goods__heading {
-        transform: rotate(0deg);
-
-        left: rem(84px);
-        top: rem(109px);
-      }
       .goods__img {
-        filter: brightness(100%)
+        filter: brightness(100%);
+      }
+      .goods__description {
+        width: rem(524px);
+        @include tablets {
+          width: calc(100vw - rem(306px));
+        }
+        @include phones {
+          width: calc(100vw - rem(270px));
+        }
       }
     }
+  }
+  &__link {
+    overflow: hidden;
+    position: relative;
   }
   &__img {
     position: absolute;
@@ -35,5 +60,30 @@
     font-size: rem(48px);
     color: $white;
     transform: rotate(-90deg);
+  }
+  &__description {
+    height: 100%;
+    width: 0;
+    overflow: hidden;
+    background: #333537e5;
+    transition: all 0.5s;
+  }
+  &__name {
+    width: rem(102px);
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+  &__text {
+    padding: rem(30px) rem(50px);
+    line-height: 1.5;
+    @include tablets {
+      width: calc(100vw - rem(306px));
+    }
+    @include phones {
+      width: calc(100vw - rem(270px));
+      padding: rem(30px) rem(10px);
+      line-height: 1.2;
+    }
   }
 }
