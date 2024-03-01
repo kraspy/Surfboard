@@ -37,6 +37,7 @@
 }
 
 .player__controls {
+  box-sizing: border-box;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -65,8 +66,8 @@
 }
 
 .player__nav {
-  width: 70%;
-  margin-right: 44px;
+  width: 60%;
+  margin-right: 15px;
 }
 
 .player__playback, .player__volume-track {
@@ -76,6 +77,12 @@
   flex: 1;
   cursor: pointer;
   border: none;
+}
+
+.player__duration {
+  width: 100px;
+  margin: 0 10px;
+  color: $gray;
 }
 
 .player__volume {

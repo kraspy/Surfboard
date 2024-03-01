@@ -10,6 +10,7 @@ btnSlideRight.addEventListener('click', () => {
   document.querySelector('.slider__slides').style.right = '100%';
 });
 
+
 // Overlay
 const overlay = document.querySelector('.overlay');
 const hamburger = document.querySelector('#hamburger-menu');
@@ -30,6 +31,7 @@ function toggleMenu(element) {
 
 hamburger.addEventListener('click', toggleMenu);
 
+
 // Team section
 const teamTitles = document.querySelectorAll('.team__title');
 
@@ -48,6 +50,7 @@ teamTitles.forEach((element) => {
     element.closest('.team__item').classList.toggle('team__item--active');
   });
 });
+
 
 // Owl carousel :: Reviews
 $(document).ready(function () {
@@ -94,6 +97,7 @@ function showModal(message, color) {
 // modalTrigger.addEventListener('click', function () {
 //     modalBackground.style.display = 'flex';
 // });
+
 
 // Form
 const orderForm = document.querySelector('#orderForm');
@@ -160,6 +164,7 @@ function resetFieldsStyle(fields) {
   }
 }
 
+
 // Horizontal menu
 const goodsList = document.querySelector('.goods__items');
 
@@ -191,6 +196,7 @@ goodsList.addEventListener('click', (e) => {
   }
 });
 
+
 // Player
 let player;
 const playerContainer = $('.player');
@@ -210,7 +216,52 @@ let eventsInit = () => {
       player.playVideo();
     }
   });
+
+  $('.player__playback').click((e) => {
+    const barWidth = $('.player__playback').width();
+    const newButtonPosition = e.originalEvent.layerX;
+    const newPlaybackPosition = (newButtonPosition / barWidth) * 100;
+    $('.player__playback-button').css({
+      left: `${newPlaybackPosition}%`,
+    });
+    $('.player__playback-cur').css({
+      width: `${newPlaybackPosition}%`,
+    });
+    player.seekTo(newPlaybackPosition * player.getDuration() * 0.01);
+  })
 };
+
+function formatTime(sec) {
+  let min = Math.floor(sec / 60);
+  let secLeft = sec % 60;
+  min = min < 10 ? '0' + min : min;
+  secLeft = secLeft < 10 ? '0' + parseInt(secLeft) : parseInt(secLeft);
+  return min + ':' + secLeft;
+}
+
+function onPlayerReady(event) {
+  let interval;
+  const durationSec = player.getDuration();
+  $('.player__all-time').text(formatTime(durationSec));
+
+  
+
+  if (typeof interval !== 'undefined') {
+    clearInterval(interval);
+  }
+
+  interval = setInterval(() => {
+    const timeSec = player.getCurrentTime();
+    const completedPercent = (player.getCurrentTime() / durationSec) * 100;
+
+    $('.player__cur-time').text(formatTime(timeSec));
+    $('.player__playback-button').css({
+      left: `${completedPercent}%`,
+    });
+  }, 1000);
+}
+
+
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('yt-player', {
@@ -221,8 +272,8 @@ function onYouTubeIframeAPIReady() {
       playsinline: 1,
     },
     events: {
-      // onReady: onPlayerReady
-      //'onStateChange': onPlayerStateChange
+      onReady: onPlayerReady,
+      // 'onStateChange': onPlayerStateChange
     },
     playerVars: {
       controls: 0,
@@ -235,18 +286,8 @@ function onYouTubeIframeAPIReady() {
   });
 }
 
-$('.player__volume-btn').on('input', function() {
-  var volume = $(this).val(); // Предполагается, что это input типа range
-  player.setVolume(volume);
-});
-
-$('.player__playback-button').click(function() {
-  var seekTime = $(this).data('seek'); // Предполагается, что это значение времени в секундах
-  player.seekTo(seekTime, true);
-});
-
-
 eventsInit();
+
 
 // One Page Scroll
 const sections = $('.section');
@@ -380,6 +421,7 @@ if (isMobile) {
     },
   });
 }
+
 
 // Map
 ymaps.ready(function init() {
