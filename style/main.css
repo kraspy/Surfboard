@@ -1312,7 +1312,7 @@ p {
 }
 
 .player__start {
-  background: url(../../images/player/play.svg) center center/100% no-repeat;
+  background: url(../images/player/play.svg) center center/100% no-repeat;
   width: 11px;
   height: 16px;
   margin-right: 30px;
@@ -1320,7 +1320,7 @@ p {
 }
 
 .player__start-pause {
-  background: url(../../images/player/pause.svg) center center/100% no-repeat;
+  background: url(../images/player/pause.svg) center center/100% no-repeat;
 }
 
 .player__nav {
@@ -1352,7 +1352,7 @@ p {
 .player__volume-icon {
   width: 13px;
   height: 16px;
-  background: url(../../images/player/volume.svg) center center/contain no-repeat;
+  background: url(../images/player/volume.svg) center center/contain no-repeat;
   margin-right: 15px;
 }
 
