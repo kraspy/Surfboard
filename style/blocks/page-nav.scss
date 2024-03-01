@@ -4,6 +4,20 @@
   right: rem(50px);
   transform: translateY(-50%);
   z-index: $z_page-nav;
+  &--black {
+    .page-nav__dot {
+      background-image: radial-gradient(
+        $black 0,
+        $black rem(3px),
+        transparent rem(3px),
+        transparent 100%
+      );
+      &--active,
+      &:hover {
+        border: rem(1px) solid $black;
+      }
+    }
+  }
   &__dots {
   }
   &__dot {
@@ -29,6 +43,9 @@
     }
   }
   &__link {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
   @include tablets {
     display: none;
